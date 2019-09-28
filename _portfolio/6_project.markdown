@@ -10,8 +10,8 @@ The project aims to create a standardized experimental design and statistical an
 - Define best-practice framework and provide advice on power analysis and experimental design approaches (e.g. Incomplete block design, Latin-square design, Lattice design)
 - Define best-practice framework and develop a standardized platform for statistical analysis in Python and rpy2 to automate dose response modelling and hypothesis testing (eg. t-test, ANOVA, Chi-square, Fisher, Mann–Whitney)
 
-<div class="img_row">
-	<img class="col one" src="{{ site.baseurl }}/img/stats.jpg" alt="" title="Statistical Analysis Pipeline" border="1"/>
-	<img class="col one" src="{{ site.baseurl }}/img/stats_dose_response.jpg" alt="" title="Dose Response model" border="1"/>
-	<img class="col one" src="{{ site.baseurl }}/img/stats_chart.jpg" alt="" title="Visualization" border="1"/>
+<div>
+	<img class="col" src="{{ site.baseurl }}/img/stats.jpg" alt="" title="Statistical Analysis Pipeline" border="1"/><br/><br/>
+	<img class="col" src="{{ site.baseurl }}/img/stats_dose_response.jpg" alt="" title="Dose Response model" border="1"/><br/><br/>
+	<img class="col" src="{{ site.baseurl }}/img/stats_chart.jpg" alt="" title="Visualization" border="1"/>
 </div>

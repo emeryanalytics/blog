@@ -9,6 +9,6 @@ The project aims to estimate corn count in individual plots in a field to suppor
 - Develop Python script to segment out individual plot image from the drone field image and plot shape file using ArcGIS
 - Develop a deep learning model (U-Net) to estimate number of corns in individual plot using Python and Tensorflow
 
-<div class="img_row">
+<div>
 	<img class="col right" src="{{ site.baseurl }}/img/field_corn.jpg" alt="" title="Field corn counting" border="1"/>
 </div>

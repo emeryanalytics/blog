@@ -11,7 +11,7 @@ Grape growers usually need to perform time-consuming lab test on sugar content t
 - Pre-process and align channels of spectral images with traditional computer vision techniques (keypoint detection, template matching) using Python and OpenCV
 - Develop regression-based machine learning models to estimate sugar content based on multi-spectral reflectance using Python and Scikit-learn
 
-<div class="img_row">
-	<img class="col one" src="{{ site.baseurl }}/img/grape_sugar.jpg" alt="" title="Multi-spectral imaging" border="1"/>
-	<img class="col one" src="{{ site.baseurl }}/img/grape_regression.jpg" alt="" title="Sugar regression model" border="1"/>
+<div>
+	<img class="col" src="{{ site.baseurl }}/img/grape_sugar.jpg" alt="" title="Multi-spectral imaging" border="1"/><br/><br/>
+	<img class="col" src="{{ site.baseurl }}/img/grape_regression.jpg" alt="" title="Sugar regression model" border="1"/>
 </div>
