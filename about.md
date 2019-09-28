@@ -14,7 +14,7 @@ I am fortunate to witness the power of data analytics in my work across operatio
 <hr/>
 <br/>
 <span class="contacticon center">
-	[ <a href="mailto:you@example.com"><i class="fa fa-envelope-square"></i></a> ]: <>
+	<!--- <a href="mailto:you@example.com"><i class="fa fa-envelope-square"></i></a> --->
 	<a href="https://github.com/liambll" target="_blank"><i class="fa fa-github-square"></i></a>
 	<a href="https://www.linkedin.com/in/liambui/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 	<a href="https://twitter.com/LiamBLL" target="_blank"><i class="fa fa-twitter-square"></i></a>
