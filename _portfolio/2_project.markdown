@@ -12,5 +12,5 @@ The project aims to automate the manual dead/alive plant counting process in a g
 - Deploy the models in production, reducing the counting time from 1 day (manual counting) to 1 hour
 
 <div class="img_row">
-	<img class="col" src="{{ site.baseurl }}/img/plant_detection.jpg" alt="" title="Dead/Alive Plant detection"/>
+	<img class="col right" src="{{ site.baseurl }}/img/plant_detection.jpg" alt="" title="Dead/Alive Plant detection"/>
 </div>
