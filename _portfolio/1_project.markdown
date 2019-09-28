@@ -11,6 +11,6 @@ The project aims to automate the manual worm counting process which is tedious a
 - Develop and evaluate deep learning models (Faster R-CNN, U-Net) to detect different worm types (egg, dead, alive) using Python and Tensorflow
 - Deploy the best model on production, reducing the worm counting time from 2 days (manual counting) to 1 hour (automated counting with computer vision).
 
-<div class="img_row">
+<div>
 	<img class="col caption" src="{{ site.baseurl }}/img/worm_counting.jpg" alt="" title="Worm Counting"/>
 </div>
