@@ -11,6 +11,6 @@ The project aims to evaluate the feasibility of reconstructing 3D point cloud of
 - Segment individual leaves and estimate leaf angles using Python and OpenCV
 
 <div>
-	<img class="col" src="{{ site.baseurl }}/img/3d.jpg" alt="" title="3D Point Clount" border="1"/><br/>
+	<img class="col" src="{{ site.baseurl }}/img/3d.jpg" alt="" title="3D Point Clount" border="1"/><br/><br/>
 	<img class="col" src="{{ site.baseurl }}/img/leaf_angle.jpg" alt="" title="Leaf Angle" border="1"/>        
 </div>
