@@ -8,6 +8,7 @@ permalink: /about/
 
 <br/>
 My name is Liam Bui. I graduated with double degree in Computer Science & Business Analytics, and a masters in Big Data & Machine Learning. I am also a Certified Analytics Professional (CAP) - awarded by the Institute for Operations Research and Management Sciences (INFORMS).
+<br/>
 I am fortunate to witness the power of data analytics in my work across operational improvement, marketing analytics and R&D. My current work mainly involves applications of computer vision and deep learning in agriculture.
 
 <br/>

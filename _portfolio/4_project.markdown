@@ -10,5 +10,5 @@ The project aims to estimate corn count in individual plots in a field to suppor
 - Develop a deep learning model (U-Net) to estimate number of corns in individual plot using Python and Tensorflow
 
 <div class="img_row">
-	<img class="col right" src="{{ site.baseurl }}/img/field_corn.jpg" alt="" title="Field corn counting"/>
+	<img class="col right" src="{{ site.baseurl }}/img/field_corn.jpg" alt="" title="Field corn counting" border="1"/>
 </div>

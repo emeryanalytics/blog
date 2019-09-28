@@ -11,6 +11,6 @@ The project aims to automate the manual dead/alive plant counting process in a g
 - Develop computer vision models (color threshold-based) to detect individual plants in a tray and classify them as dead/alive using Python, OpenCV
 - Deploy the models in production, reducing the counting time from 1 day (manual counting) to 1 hour
 
-<div class="img_row">
-	<img class="col right" src="{{ site.baseurl }}/img/plant_detection.jpg" alt="" title="Dead/Alive Plant detection"/>
+<div>
+	<img class="col right" src="{{ site.baseurl }}/img/plant_detection.jpg" alt="" title="Dead/Alive Plant detection" border="1"/>
 </div>

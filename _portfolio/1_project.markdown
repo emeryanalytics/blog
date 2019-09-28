@@ -12,5 +12,5 @@ The project aims to automate the manual worm counting process which is tedious a
 - Deploy the best model on production, reducing the worm counting time from 2 days (manual counting) to 1 hour (automated counting with computer vision).
 
 <div>
-	<img class="col caption" src="{{ site.baseurl }}/img/worm_counting.jpg" alt="" title="Worm Counting"/>
+	<img class="col caption" src="{{ site.baseurl }}/img/worm_counting.jpg" alt="" title="Worm Counting" border="1"/>
 </div>
