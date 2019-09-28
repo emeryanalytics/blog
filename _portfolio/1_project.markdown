@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Worm counting with Deep learning
-description: Technologies: Python, Tensorflow
-img: /img/worm_counting.jpg
+title: Project
+description: a project with a background image
+img: /img/2.jpg
 ---
 
 The project aims to automate the manual worm counting process which is tedious and time consuming for scientists. Each experiment can take 2 days for scientists to count egg/dead/alive worms.
