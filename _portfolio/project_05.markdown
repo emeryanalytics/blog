@@ -1,17 +1,14 @@
 ---
 layout: post
-title: Grape sugar estimation
-description: Python, OpenCV, Scikit-learn
-img: /img/grape_sugar.jpg
+title: Field Corn counting
+description: Python, ArcGIS, Tensorflow
+img: /img/field_corn.jpg
 ---
 
-Grape growers usually need to perform time-consuming lab test on sugar content to determine the best time for harvest. This project aims to replace sugar content lab test with a machine vision solution that comprises a multi-spectral imaging system and a machine learning model to estimate sugar content based on multi-spectral reflectance.
-- Develop a multi-spectral imaging prototype with raspberry-pi, picamera and camera filters
-- Collect multi-spectral images of grapes using the imaging prototype and the corresponding sugar content using a BRIX meter
-- Pre-process and align channels of spectral images with traditional computer vision techniques (keypoint detection, template matching) using Python and OpenCV
-- Develop regression-based machine learning models to estimate sugar content based on multi-spectral reflectance using Python and Scikit-learn
+The project aims to estimate corn count in individual plots in a field to support corn variety field trials.
+- Develop Python script to segment out individual plot image from the drone field image and plot shape file using ArcGIS
+- Develop a deep learning model (U-Net) to estimate number of corns in individual plot using Python and Tensorflow
 
 <div>
-	<img class="col" src="{{ site.baseurl }}/img/grape_sugar.jpg" alt="" title="Multi-spectral imaging" border="1"/><br/><br/>
-	<img class="col" src="{{ site.baseurl }}/img/grape_regression.jpg" alt="" title="Sugar regression model" border="1"/>
+	<img class="col right" src="{{ site.baseurl }}/img/field_corn.jpg" alt="" title="Field corn counting" border="1"/>
 </div>

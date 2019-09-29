@@ -1,16 +1,14 @@
 ---
 layout: post
-title: 3D Plant
-description: Python, OpenSFM, OpenCV
-img: /img/3d.jpg
+title: Plant GAN
+description: Python, Tensorflow, OpenCV
+img: /img/GAN.jpg
 ---
 
-The project aims to evaluate the feasibility of reconstructing 3D point cloud of plants from 2D images from different angles, and estimate leaf angles from the 3D point cloud.
-- Work with robotics team to develop an imaging prototype that can automatically capture 2D images of plants from various angles
-- Apply StereoVision and Structure-From-Motion algorithms to reconstruct 3D point clouds of plants using Python and OpenSFM
-- Segment individual leaves and estimate leaf angles using Python and OpenCV
+The project aims to evaluate the feasibility of using Generative Adversarial Network to generate realistic plant images with different levels of disease (powdery mildew).
+- Develop a computer vision model to segment out healhty and powdery mildew areas using Python and OpenCV 
+- Apply pix2pix model to generate plant images with powdery mildew based on a sketch of healthy (green) and disease area (white) using Python and Tensorflow
 
 <div>
-	<img class="col" src="{{ site.baseurl }}/img/3d.jpg" alt="" title="3D Point Clount" border="1"/><br/><br/>
-	<img class="col" src="{{ site.baseurl }}/img/leaf_angle.jpg" alt="" title="Leaf Angle" border="1"/>        
+	<img class="col" src="{{ site.baseurl }}/img/GAN.jpg" alt="" title="Generated plant images" border="1"/>
 </div>

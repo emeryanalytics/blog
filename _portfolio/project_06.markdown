@@ -1,21 +1,17 @@
 ---
 layout: post
-title: Statistial Analysis
-description: Python, Statmodels, R
-img: /img/stats.jpg
+title: Grape sugar estimation
+description: Python, OpenCV, Scikit-learn
+img: /img/grape_sugar.jpg
 ---
 
-The project aims to create a standardized experimental design and statistical analysis framework for scientists.
-- Define standardized data template for scientists to collect experimental data from different sources (Lab, Greenhouse, Field)
-- Define best-practice framework and provide advice on power analysis and experimental design approaches (e.g. Incomplete block design, Latin-square design, Lattice design)
-- Define best-practice framework and develop a standardized platform for statistical analysis in Python and rpy2 to automate dose response modelling and hypothesis testing (eg. t-test, ANOVA, Chi-square, Fisher, Mann–Whitney)
+Grape growers usually need to perform time-consuming lab test on sugar content to determine the best time for harvest. This project aims to replace sugar content lab test with a machine vision solution that comprises a multi-spectral imaging system and a machine learning model to estimate sugar content based on multi-spectral reflectance.
+- Develop a multi-spectral imaging prototype with raspberry-pi, picamera and camera filters
+- Collect multi-spectral images of grapes using the imaging prototype and the corresponding sugar content using a BRIX meter
+- Pre-process and align channels of spectral images with traditional computer vision techniques (keypoint detection, template matching) using Python and OpenCV
+- Develop regression-based machine learning models to estimate sugar content based on multi-spectral reflectance using Python and Scikit-learn
 
 <div>
-	<img class="col" src="{{ site.baseurl }}/img/stats.jpg" alt="" title="Statistical Analysis Pipeline" border="1"/>
-</div>
-<div>
-	<img class="col" src="{{ site.baseurl }}/img/stats_dose_response.jpg" alt="" title="Dose Response model" border="1"/>
-</div>
-<div>
-	<img class="col" src="{{ site.baseurl }}/img/stats_chart.jpg" alt="" title="Visualization" border="1"/>
+	<img class="col" src="{{ site.baseurl }}/img/grape_sugar.jpg" alt="" title="Multi-spectral imaging" border="1"/><br/><br/>
+	<img class="col" src="{{ site.baseurl }}/img/grape_regression.jpg" alt="" title="Sugar regression model" border="1"/>
 </div>

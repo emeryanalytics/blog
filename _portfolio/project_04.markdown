@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Field Corn counting
-description: Python, ArcGIS, Tensorflow
-img: /img/field_corn.jpg
+title: 3D Plant
+description: Python, OpenSFM, OpenCV
+img: /img/3d.jpg
 ---
 
-The project aims to estimate corn count in individual plots in a field to support corn variety field trials.
-- Develop Python script to segment out individual plot image from the drone field image and plot shape file using ArcGIS
-- Develop a deep learning model (U-Net) to estimate number of corns in individual plot using Python and Tensorflow
+The project aims to evaluate the feasibility of reconstructing 3D point cloud of plants from 2D images from different angles, and estimate leaf angles from the 3D point cloud.
+- Work with robotics team to develop an imaging prototype that can automatically capture 2D images of plants from various angles
+- Apply StereoVision and Structure-From-Motion algorithms to reconstruct 3D point clouds of plants using Python and OpenSFM
+- Segment individual leaves and estimate leaf angles using Python and OpenCV
 
 <div>
-	<img class="col right" src="{{ site.baseurl }}/img/field_corn.jpg" alt="" title="Field corn counting" border="1"/>
+	<img class="col" src="{{ site.baseurl }}/img/3d.jpg" alt="" title="3D Point Clount" border="1"/><br/><br/>
+	<img class="col" src="{{ site.baseurl }}/img/leaf_angle.jpg" alt="" title="Leaf Angle" border="1"/>        
 </div>
