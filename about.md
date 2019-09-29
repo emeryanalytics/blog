@@ -11,7 +11,6 @@ My name is Liam Bui. I graduated with double degree in Computer Science & Busine
 <br/>
 
 <br/>
-
 I am fortunate to witness the power of data analytics in my work across operational improvement, marketing analytics and R&D. My current interest involves applications of computer vision and machine learning/deep learning in agriculture and healthcare.
 
 <br/>
