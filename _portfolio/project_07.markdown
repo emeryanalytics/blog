@@ -15,7 +15,6 @@ The project aims to evaluate the feasibility of using machine learning to predic
 </div>
 <br/>
 
-<br/>
 <div>
 	<img class="col" src="{{ site.baseurl }}/img/chemistry_accuracy.jpg" alt="" title="Model result" border="1"/>
 </div>
