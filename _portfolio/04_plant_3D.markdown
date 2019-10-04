@@ -2,7 +2,7 @@
 layout: post
 title: 3D Plant
 description: Python, OpenSFM, OpenCV
-img: /img/3d.jpg
+img: /img/thumbnail_3d.jpg
 ---
 
 The project aims to evaluate the feasibility of reconstructing 3D point cloud of plants from 2D images from different angles, and estimate leaf angles from the 3D point cloud.

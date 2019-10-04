@@ -2,7 +2,7 @@
 layout: post
 title: Drug Virtual Screening
 description: Python, RDKit, PubChemPy, Scikit-learn
-img: /img/chemistry.jpg
+img: /img/thumbnail_chemistry.jpg
 ---
 
 The project aims to evaluate the feasibility of using machine learning to predict efficacy of molecules against certain diseases based on the molecules' chemical structures.

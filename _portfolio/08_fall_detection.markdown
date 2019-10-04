@@ -2,7 +2,7 @@
 layout: post
 title: Fall Detection
 description: Python, Scikit-learn
-img: /img/fall_detection.jpg
+img: /img/thumbnail_fall_detection.jpg
 ---
 
 The project aims to detect when an elder falls based on biomedical signal data collected from wearable sensors.

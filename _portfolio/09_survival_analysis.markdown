@@ -2,7 +2,7 @@
 layout: post
 title: Survival Analysis
 description: R, ggplot2, glm, survival
-img: /img/survival.jpg
+img: /img/thumbnail_survival.jpg
 ---
 
 The project aims to understand the effect of tobacco use on mortality using National Longitudinal Mortality data.

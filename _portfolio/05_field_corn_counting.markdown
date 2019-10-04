@@ -2,7 +2,7 @@
 layout: post
 title: Field Corn counting
 description: Python, ArcGIS, Tensorflow
-img: /img/field_corn.jpg
+img: /img/thumbnail_field_corn.jpg
 ---
 
 The project aims to estimate corn count in individual plots in a field to support corn variety field trials.

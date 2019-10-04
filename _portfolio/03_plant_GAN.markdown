@@ -2,7 +2,7 @@
 layout: post
 title: Plant GAN
 description: Python, Tensorflow, OpenCV
-img: /img/GAN.jpg
+img: /img/thumbnail_GAN.jpg
 ---
 
 The project aims to evaluate the feasibility of using Generative Adversarial Network to generate realistic plant images with different levels of disease (powdery mildew).

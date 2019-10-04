@@ -2,7 +2,7 @@
 layout: post
 title: Grape sugar estimation
 description: Python, OpenCV, Scikit-learn
-img: /img/grape_sugar.jpg
+img: /img/thumbnail_grape_sugar.jpg
 ---
 
 Grape growers usually need to perform time-consuming lab test on sugar content to determine the best time for harvest. This project aims to replace sugar content lab test with a machine vision solution that comprises a multi-spectral imaging system and a machine learning model to estimate sugar content based on multi-spectral reflectance.
