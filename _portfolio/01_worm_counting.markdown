@@ -2,7 +2,7 @@
 layout: post
 title: Worm counting
 description: Python, Tensorflow
-img: /img/worm_counting.jpg
+img: /img/thumbnail_worm_counting.jpg
 ---
 
 The project aims to automate the manual worm counting process which is tedious and time consuming for scientists. Each experiment can take 2 days for scientists to count egg/dead/alive worms.
