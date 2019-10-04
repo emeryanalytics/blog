@@ -2,7 +2,7 @@
 layout: post
 title: Dead/Alive Plant detection
 description: Python, Tensorflow, OpenCV
-img: /img/plant_detection.jpg
+img: /img/thumbnail_plant_detection.jpg
 ---
 
 The project aims to automate the manual dead/alive plant counting process in a greenhouse. The manual process can takes 1 day for each experiment.
