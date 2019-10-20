@@ -20,7 +20,17 @@ def extract_hu_moments(img):
     feature = cv2.HuMoments(cv2.moments(gray)).flatten()
     return feature
 
-path = 'D:/Training/Source_Code/Other/blog/img/'
+def extract_haralick(img):
+    """Extract Haralick features of an image. Haralick features are texture descriptors.
+    :param img: ndarray, BGR image
+    :return feature: ndarray, contains 13 Haralick features of the image
+    """
+
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    feature = mahotas.features.haralick(gray).mean(axis=0)
+    return feature
+
+path = 'C:/SourceCode/blog/img/'
 file_list = os.listdir(path)
 
 for filename in file_list:
@@ -28,6 +38,14 @@ for filename in file_list:
         img = cv2.imread(os.path.join(path, filename))
         hu = extract_hu_moments(img)
         hu = [np.round(x, 7) for x in hu]
+        print(filename)
+        print(hu)
+        
+for filename in file_list:
+    if 'texture' in filename.lower():
+        img = cv2.imread(os.path.join(path, filename))
+        hu = extract_haralick(img)
+        hu = [np.round(x, 2) for x in hu]
         print(filename)
         print(hu)
         
