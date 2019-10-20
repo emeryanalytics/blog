@@ -92,6 +92,15 @@ figcaption {
     font-size: $small-font-size;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    border-spacing: 0;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
 
 
 /**
