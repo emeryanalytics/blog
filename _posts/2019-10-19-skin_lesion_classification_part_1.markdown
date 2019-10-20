@@ -5,7 +5,7 @@ date:   2019-10-19 16:40:16
 description: Classify skin lesion images as malignant/benign using global image descriptors
 ---
 
-## Introduction
+### Introduction
 In this tutorial, we are going to understand how to extract features from images build a model to classify the images into difference classes.<br/>
 We will use a skin lesion dataset in this tutorial and we will look at different ways to extract features:
 * Extract global image features with shape, texture and color descriptors (Part 1)
@@ -13,7 +13,7 @@ We will use a skin lesion dataset in this tutorial and we will look at different
 * Learn relevant image features with convolutional neural network (Part 3)
 
 
-## Global image features
+### Global image features
 Before convolutional neural network architecture becomes popular, image processing relies on "hand-crafted" feature engineering to extract meaningful features from images.
 Global features describe an image as a whole to the generalize the entire object, while  the local features describe smaller image patches.
 Global features include contour representations, shape descriptors, texture and color features. In this tutorial, several common global features are used to train a skin lesion classification model.
@@ -40,7 +40,7 @@ Global features include contour representations, shape descriptors, texture and 
 
 * _HSV Color histogram_: HSV (Hue, Saturation, Value) color space is closely corresponds to the human visual perception of color. To obtain HSV histogram, we devide hue scale, saturation scale, and intensity scale into 8 groups. By combining each of these groups, we get a total of 512 cells to represent a 512-component HSV color histogram. Then, the corresponding histogram component is determined and normalized by counting how many pixels belong to each group. Since HSV Color histogram is based on pixel count, it is rotational, translational and scale invariant. 
 
-## Classification models
+### Classification models
 Once we extract global features from images, we can use these features to train a model to classify malignant/benign skin lesion images. Since most of these features are rotational, translational and scale invariant, we don't have to worry much about images of different rotation, translation and scale.<br/>
 We benchmark different base machine learning models from different classes of models:
 * Logistic Regression
