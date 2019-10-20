@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tutorial: Skin lesion classification - Part 1
+title:  Tutorial - Skin lesion classification (Part 1)
 date:   2019-10-19 16:40:16
 description: Classify skin lesion images as malignant/benign using global image descriptors
 ---
