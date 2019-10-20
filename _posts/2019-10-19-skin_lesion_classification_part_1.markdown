@@ -18,6 +18,7 @@ Before convolutional neural network architecture becomes popular, image processi
 Global features describe an image as a whole to the generalize the entire object, while  the local features describe smaller image patches.
 Global features include contour representations, shape descriptors, texture and color features. In this tutorial, several common global features are used to train a skin lesion classification model.
 * _Hu Moments_ is a shape descriptor that comprises 7 numbers calculated using central moments that are invariant to image transformations. The 7 moments are invariant to translation, scale, and rotation (only the 7th moment’s sign changes for image reflection).<br/>
+
 | Image  | H1 | H2 | H3 | H4 | H5 | H6 | H7 |
 | ------ | --- | --- | --- | --- | --- | --- | --- |
 | <img src="{{ site.baseurl }}/img/letter_K.png" width="5%"/> | 0.0011752 | 0.0000005 | 0 | 0 | 0 | 0 | 0 |
@@ -33,9 +34,9 @@ Global features include contour representations, shape descriptors, texture and 
 | ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | <img src="{{ site.baseurl }}/img/texture_2.jpg" width="5%"/> | 0.0 | 539.46 | 0.83 | 1611.63 | 0.09 | 175.46 | 5907.08 | 8.18 | 13.23 | 0.0 | 5.51 | -0.16 | 0.95 |
 | <img src="{{ site.baseurl }}/img/texture_1.jpg" width="5%"/> | 0.19 | 677.4 | 0.89 | 3065.19 | 0.5 | 71.28 | 11583.34 | 5.48 | 8.02 | 0.0 | 4.13 | -0.37 | 0.99 |
-| <img src="{{ site.baseurl }}/img/texture_1_rotated.jpg width="5%"/> | 0.18 | 681.22 | 0.89 | 3066.15 | 0.5 | 71.3 | 11583.36 | 5.55 | 8.12 | 0.0 | 4.16 | -0.37 | 0.99 |
-| <img src="{{ site.baseurl }}/img/texture_1_shifted.jpg width="5%"/> | 0.17 | 711.63 | 0.88 | 3071.9 | 0.48 | 71.58 | 11575.98 | 5.7 | 8.35 | 0.0 | 4.26 | -0.35 | 0.99 |
-| <img src="{{ site.baseurl }}/img/texture_1_Scaled.jpg width="5%"/> | 0.7 | 477.84 | 0.76 | 1001.88 | 0.85 | 17.94 | 3529.7 | 1.93 | 2.55 | 0.0 | 1.62 | -0.5 | 0.91 |
+| <img src="{{ site.baseurl }}/img/texture_1_rotated.jpg" width="5%"/> | 0.18 | 681.22 | 0.89 | 3066.15 | 0.5 | 71.3 | 11583.36 | 5.55 | 8.12 | 0.0 | 4.16 | -0.37 | 0.99 |
+| <img src="{{ site.baseurl }}/img/texture_1_shifted.jpg" width="5%"/> | 0.17 | 711.63 | 0.88 | 3071.9 | 0.48 | 71.58 | 11575.98 | 5.7 | 8.35 | 0.0 | 4.26 | -0.35 | 0.99 |
+| <img src="{{ site.baseurl }}/img/texture_1_Scaled.jpg" width="5%"/> | 0.7 | 477.84 | 0.76 | 1001.88 | 0.85 | 17.94 | 3529.7 | 1.93 | 2.55 | 0.0 | 1.62 | -0.5 | 0.91 |
 
 
 * _HSV Color histogram_: HSV (Hue, Saturation, Value) color space is closely corresponds to the human visual perception of color. To obtain HSV histogram, we devide hue scale, saturation scale, and intensity scale into 8 groups. By combining each of these groups, we get a total of 512 cells to represent a 512-component HSV color histogram. Then, the corresponding histogram component is determined and normalized by counting how many pixels belong to each group. Since HSV Color histogram is based on pixel count, it is rotational, translational and scale invariant. 
