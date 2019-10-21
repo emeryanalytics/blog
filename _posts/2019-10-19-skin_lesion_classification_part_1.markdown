@@ -51,5 +51,5 @@ We benchmark different base machine learning models from different classes of mo
 * Tree-based models (Random Forest, Gradient Boosting Tree)
 
 We also implement model stacking that combines prediction from these base models to see if it helps improve model accuracy. The intuition of model stacking is that different models might perform better in some sections of feature space and perform worse in other sections. Model stacking would pay more attentions to models that perfrom better in certain sections of feature space.<br/>
-<img src="{{ site.baseurl }}/img/skin_lesion_stacking_model.jpg" alt="" width="80%"><br/>
+<img src="{{ site.baseurl }}/img/skin_lesion_stacking_model.jpg" alt="" width="100%"><br/>
 
