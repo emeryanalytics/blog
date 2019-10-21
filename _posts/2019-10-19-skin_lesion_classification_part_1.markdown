@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Tutorial - Skin lesion classification (Part 1)
+title:  Skin lesion classification (Part 1)
 date:   2019-10-19 16:40:16
 description: Classify skin lesion images as malignant/benign using global image descriptors
 ---
 
 ### Introduction
-In this tutorial, we are going to understand how to extract features from images build a model to classify the images into difference classes.<br/>
+In this tutorial, we will understand how to extract features from images build a model to classify the images into difference classes.<br/>
 We will use a skin lesion dataset in this tutorial and we will look at different ways to extract features:
 * Extract global image features with shape, texture and color descriptors (Part 1)
 * Extract local image features with keypoint descriptors (Part 2)
