@@ -53,7 +53,7 @@ We also implement model stacking that combines prediction from these base models
 
 <br/>
 ### Code
-Full code for <a href="https://github.com/liambll/skin-lesion-classification/blob/master/models/feature_extraction.py">image feature extraction</a> and <a href="https://github.com/liambll/skin-lesion-classification/blob/master/models/stacking_model.py">classification models</a>.
+Full code for <a href="https://github.com/liambll/skin-lesion-classification/blob/master/models/feature_extraction.py" target="_blank">image feature extraction</a> and <a href="https://github.com/liambll/skin-lesion-classification/blob/master/models/stacking_model.py" target="_blank">classification models</a>.
 
 * We first implement functions to extract different image features:
 ```python
