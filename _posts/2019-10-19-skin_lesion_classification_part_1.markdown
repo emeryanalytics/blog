@@ -21,22 +21,22 @@ Global features include contour representations, shape descriptors, texture and 
 
 | Image  | H1 | H2 | H3 | H4 | H5 | H6 | H7 |
 | ------ | --- | --- | --- | --- | --- | --- | --- |
-| <img src="{{ site.baseurl }}/img/letter_K.png" width="30"/> | 0.0011752 | 0.0000005 | 0 | 0 | 0 | 0 | 0 |
-| <img src="{{ site.baseurl }}/img/letter_O.png" width="30"/> | 0.0012954 | 0.0000004 | 0 | 0 | 0 | 0 | 0 |
-| <img src="{{ site.baseurl }}/img/letter_O_rotated.png" width="30"/> | 0.0012954 | 0.0000004 | 0 | 0 | 0 | 0 | 0 |
-| <img src="{{ site.baseurl }}/img/letter_O_shifted.png" width="30"/> | 0.0012954 | 0.0000004 | 0 | 0 | 0 | 0 | 0 |
-| <img src="{{ site.baseurl }}/img/letter_O_scaled.png" width="30"/> | 0.0012954 | 0.0000004 | 0 | 0 | 0 | 0 | 0 |
+| <img src="{{ site.baseurl }}/img/letter_K.png" width="40"/> | 0.0011752 | 0.0000005 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| <img src="{{ site.baseurl }}/img/letter_O.png" width="40"/> | 0.0012954 | 0.0000004 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| <img src="{{ site.baseurl }}/img/letter_O_rotated.png" width="40"/> | 0.0012954 | 0.0000004 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| <img src="{{ site.baseurl }}/img/letter_O_shifted.png" width="40"/> | 0.0012954 | 0.0000004 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| <img src="{{ site.baseurl }}/img/letter_O_scaled.png" width="40"/> | 0.0012954 | 0.0000004 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
 <br/>
 * _Haralick features_: is a texture descriptor calculated from a gray level co-occurrence matrix (GLCM). Haralick features are rotational and translational invariant, but not scale invariant.<br/>
 
 | Image  | H1 | H2 | H3 | H4 | H5 | H6 | H7 | H8 | H8 | H10 | H11 | H12 | H13 |
 | ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| <img src="{{ site.baseurl }}/img/texture_2.jpg" width="30"/> | 0.0 | 539.46 | 0.83 | 1611.63 | 0.09 | 175.46 | 5907.08 | 8.18 | 13.23 | 0.0 | 5.51 | -0.16 | 0.95 |
-| <img src="{{ site.baseurl }}/img/texture_1.jpg" width="30"/> | 0.19 | 677.4 | 0.89 | 3065.19 | 0.5 | 71.28 | 11583.34 | 5.48 | 8.02 | 0.0 | 4.13 | -0.37 | 0.99 |
-| <img src="{{ site.baseurl }}/img/texture_1_rotated.jpg" width="30"/> | 0.18 | 681.22 | 0.89 | 3066.15 | 0.5 | 71.3 | 11583.36 | 5.55 | 8.12 | 0.0 | 4.16 | -0.37 | 0.99 |
-| <img src="{{ site.baseurl }}/img/texture_1_shifted.jpg" width="30"/> | 0.17 | 711.63 | 0.88 | 3071.9 | 0.48 | 71.58 | 11575.98 | 5.7 | 8.35 | 0.0 | 4.26 | -0.35 | 0.99 |
-| <img src="{{ site.baseurl }}/img/texture_1_Scaled.jpg" width="30"/> | 0.7 | 477.84 | 0.76 | 1001.88 | 0.85 | 17.94 | 3529.7 | 1.93 | 2.55 | 0.0 | 1.62 | -0.5 | 0.91 |
+| <img src="{{ site.baseurl }}/img/texture_2.jpg" width="40"/> | 0.0 | 539.46 | 0.83 | 1611.63 | 0.09 | 175.46 | 5907.08 | 8.18 | 13.23 | 0.0 | 5.51 | -0.16 | 0.95 |
+| <img src="{{ site.baseurl }}/img/texture_1.jpg" width="40"/> | 0.19 | 677.4 | 0.89 | 3065.19 | 0.5 | 71.28 | 11583.34 | 5.48 | 8.02 | 0.0 | 4.13 | -0.37 | 0.99 |
+| <img src="{{ site.baseurl }}/img/texture_1_rotated.jpg" width="40"/> | 0.18 | 681.22 | 0.89 | 3066.15 | 0.5 | 71.3 | 11583.36 | 5.55 | 8.12 | 0.0 | 4.16 | -0.37 | 0.99 |
+| <img src="{{ site.baseurl }}/img/texture_1_shifted.jpg" width="40"/> | 0.17 | 711.63 | 0.88 | 3071.9 | 0.48 | 71.58 | 11575.98 | 5.7 | 8.35 | 0.0 | 4.26 | -0.35 | 0.99 |
+| <img src="{{ site.baseurl }}/img/texture_1_Scaled.jpg" width="40"/> | 0.7 | 477.84 | 0.76 | 1001.88 | 0.85 | 17.94 | 3529.7 | 1.93 | 2.55 | 0.0 | 1.62 | -0.5 | 0.91 |
 
 <br/>
 * _HSV Color histogram_: HSV (Hue, Saturation, Value) color space is closely corresponds to the human visual perception of color. To obtain HSV histogram, we devide hue scale, saturation scale, and intensity scale into 8 groups. By combining each of these groups, we get a total of 512 cells to represent a 512-component HSV color histogram. Then, the corresponding histogram component is determined and normalized by counting how many pixels belong to each group. Since HSV Color histogram is based on pixel count, it is rotational, translational and scale invariant. 
