@@ -91,12 +91,6 @@ def extract_color_histogram(img, n_bins=8):
     cv2.normalize(hist, hist)
     feature = hist.flatten()
     return feature
-
-    # Extract features and labels for train set and test set
-    train_path = os.path.join(data_path, config.TRAIN_FOLDER)
-    test_path = os.path.join(data_path, config.TEST_FOLDER)
-    X_train_global_features, keypoints_features_train, y_train = prepare_dataset(train_path, img_size=img_size)
-    X_test_global_features, keypoints_features_test, y_test = prepare_dataset(test_path, img_size=img_size)
 ```
 
 * We read in images and extract features. Remember to normalize features because feature scale/normalization is important for some machine learning algorithms:
