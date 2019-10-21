@@ -58,39 +58,39 @@ Full code for <a href="https://github.com/liambll/skin-lesion-classification/blo
 
 * We first implement functions to extract different image features:
 ```python
-def extract_hu_moments(img):
-    """Extract Hu Moments feature of an image. Hu Moments are shape descriptors.
-    :param img: ndarray, BGR image
-    :return feature: ndarray, contains 7 Hu Moments of the image
-    """
+    def extract_hu_moments(img):
+        """Extract Hu Moments feature of an image. Hu Moments are shape descriptors.
+        :param img: ndarray, BGR image
+        :return feature: ndarray, contains 7 Hu Moments of the image
+        """
+        
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        feature = cv2.HuMoments(cv2.moments(gray)).flatten()
+        return feature
     
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    feature = cv2.HuMoments(cv2.moments(gray)).flatten()
-    return feature
-
-
-def extract_haralick(img):
-    """Extract Haralick features of an image. Haralick features are texture descriptors.
-    :param img: ndarray, BGR image
-    :return feature: ndarray, contains 13 Haralick features of the image
-    """
-
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    feature = mahotas.features.haralick(gray).mean(axis=0)
-    return feature
-
-
-def extract_color_histogram(img, n_bins=8):
-    """Extract Color histogram of an image.
-    :param img: ndarray, BGR image
-    :return feature: ndarray, contains n_bins*n_bins*n_bins HSV histogram features of the image
-    """
     
-    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) # convert the image to HSV color-space
-    hist  = cv2.calcHist([hsv], [0, 1, 2], None, [n_bins, n_bins, n_bins], [0, 180, 0, 256, 0, 256])
-    cv2.normalize(hist, hist)
-    feature = hist.flatten()
-    return feature
+    def extract_haralick(img):
+        """Extract Haralick features of an image. Haralick features are texture descriptors.
+        :param img: ndarray, BGR image
+        :return feature: ndarray, contains 13 Haralick features of the image
+        """
+    
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        feature = mahotas.features.haralick(gray).mean(axis=0)
+        return feature
+    
+    
+    def extract_color_histogram(img, n_bins=8):
+        """Extract Color histogram of an image.
+        :param img: ndarray, BGR image
+        :return feature: ndarray, contains n_bins*n_bins*n_bins HSV histogram features of the image
+        """
+        
+        hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) # convert the image to HSV color-space
+        hist  = cv2.calcHist([hsv], [0, 1, 2], None, [n_bins, n_bins, n_bins], [0, 180, 0, 256, 0, 256])
+        cv2.normalize(hist, hist)
+        feature = hist.flatten()
+        return feature
 ```
 
 * We read in images and extract features. Remember to normalize features because feature scale/normalization is important for some machine learning algorithms:
