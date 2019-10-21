@@ -57,7 +57,6 @@ We also implement model stacking that combines prediction from these base models
 Full code for <a href="https://github.com/liambll/skin-lesion-classification/blob/master/models/feature_extraction.py">image feature extraction</a> and <a href="https://github.com/liambll/skin-lesion-classification/blob/master/models/stacking_model.py">classification models</a>.
 
 * We first implement functions to extract different image features:
-
 ```python
     def extract_hu_moments(img):
         """Extract Hu Moments feature of an image. Hu Moments are shape descriptors.
