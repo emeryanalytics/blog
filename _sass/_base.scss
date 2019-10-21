@@ -92,6 +92,16 @@ figcaption {
     font-size: $small-font-size;
 }
 
+table {
+  margin-left: auto; 
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #bde9ba;
+}
+
 table, th, td {
   border: 1px solid black;
 }
