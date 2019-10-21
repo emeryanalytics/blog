@@ -92,7 +92,9 @@ figcaption {
     font-size: $small-font-size;
 }
 
-
+table, th, td {
+  border: 1px solid black;
+}
 
 /**
  * Lists

@@ -41,6 +41,7 @@ Global features include contour representations, shape descriptors, texture and 
 
 * _HSV Color histogram_: HSV (Hue, Saturation, Value) color space is closely corresponds to the human visual perception of color. To obtain HSV histogram, we devide hue scale, saturation scale, and intensity scale into 8 groups. By combining each of these groups, we get a total of 512 cells to represent a 512-component HSV color histogram. Then, the corresponding histogram component is determined and normalized by counting how many pixels belong to each group. Since HSV Color histogram is based on pixel count, it is rotational, translational and scale invariant. 
 
+<br/>
 ### Classification models
 Once we extract global features from images, we can use these features to train a model to classify malignant/benign skin lesion images. Since most of these features are rotational, translational and scale invariant, we don't have to worry much about images of different rotation, translation and scale.<br/>
 We benchmark different base machine learning models from different classes of models:
@@ -49,6 +50,6 @@ We benchmark different base machine learning models from different classes of mo
 * Support Vector Machine
 * Tree-based models (Random Forest, Gradient Boosting Tree)
 
-We also implement model stacking that combines prediction from these base models to see if it helps improve model accuracy. The intuition of model stacking is that different models might perform better in some sections of feature space and perform worse in other sections. Model stacking would pay more attentions to models that perfrom better in certain sections of feature space.
+We also implement model stacking that combines prediction from these base models to see if it helps improve model accuracy. The intuition of model stacking is that different models might perform better in some sections of feature space and perform worse in other sections. Model stacking would pay more attentions to models that perfrom better in certain sections of feature space.<br/>
 <img src="{{ site.baseurl }}/img/skin_lesion_stacking_model.jpg" alt="" width="80%"><br/>
 
