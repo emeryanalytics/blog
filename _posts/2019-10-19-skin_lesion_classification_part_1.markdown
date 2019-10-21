@@ -51,5 +51,54 @@ We benchmark different base machine learning models from different classes of mo
 * Tree-based models (Random Forest, Gradient Boosting Tree)
 
 We also implement model stacking that combines prediction from these base models to see if it helps improve model accuracy. The intuition of model stacking is that different models might perform better in some sections of feature space and perform worse in other sections. Model stacking would pay more attentions to models that perfrom better in certain sections of feature space.<br/>
-<img src="{{ site.baseurl }}/img/skin_lesion_stacking_model.jpg" alt="" width="100%"><br/>
+<img src="{{ site.baseurl }}/img/skin_lesion_stacking_model.jpg" alt="" width="100%">
+
+<br/>
+### Code
+Full code for <a href="https://github.com/liambll/skin-lesion-classification/blob/master/models/feature_extraction.py">image feature extraction</a> and <a href="https://github.com/liambll/skin-lesion-classification/blob/master/models/stacking_model.py">classification models</a>.
+
+* We first read in images and extract features:
+```python
+    # Extract features and labels for train set and test set
+    train_path = os.path.join(data_path, config.TRAIN_FOLDER)
+    test_path = os.path.join(data_path, config.TEST_FOLDER)
+    X_train_global_features, keypoints_features_train, y_train = prepare_dataset(train_path, img_size=img_size)
+    X_test_global_features, keypoints_features_test, y_test = prepare_dataset(test_path, img_size=img_size)
+```
+
+* Remember to normalize features because feature scale/normalization is important for some machine learning algorithms:
+```python
+    # Normalize features
+    from sklearn.preprocessing import MinMaxScaler
+    scaler = MinMaxScaler(feature_range=(0, 1))
+    X_train = scaler.fit_transform(X_train_all_features)
+    X_test = scaler.transform(X_test_all_features)
+```
+
+* We can now train base machine learning models:
+```python
+    # Build base models
+    base_models, base_model_names, base_model_scores = build_base_models(X_train, y_train)
+    if save_path is not None:
+        # Save base models    
+        os.makedirs(os.path.join(save_path, 'base_models'), exist_ok=True)
+        for i in range(len(base_models)):
+            with open(os.path.join(save_path, 'base_models', 'base_model_' + str(i+1) + '.pkl'), 'wb') as f:
+                pickle.dump(base_models[i], f)
+```
+
+* If we want to try model stacking, we can take prediction from base models and add them to the feature space and train a model with new feature space.
+```python          
+    # Build level 1 stack models
+    stack_fitted_models, stack_model_names, stack_model_scores = build_stack_models(base_models.copy(),
+                                                                                    X_train, y_train)
+    if save_path is not None:
+        # Save base models    
+        os.makedirs(os.path.join(save_path, 'stacking_models'), exist_ok=True)
+        for i in range(len(stack_fitted_models)):
+            with open(os.path.join(save_path, 'stacking_models', stack_model_names[i] + '.pkl'), 'wb') as f:
+                pickle.dump(stack_fitted_models[i], f)
+```
+
+
 
