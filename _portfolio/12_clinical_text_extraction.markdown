@@ -14,6 +14,7 @@ The project aims to demonstrate the use of Natural Language Processing to search
 	<img class="col" src="{{ site.baseurl }}/img/clinical_text.jpg" alt="" title="Clinical Text" border="1"/>
 </div>
 
+<br/>
 <b>Sample clinical information extracted (<span style="color:red;">Red</span> indicates incorrect extraction):<b/>
 <div>
 	<img class="col" src="{{ site.baseurl }}/img/clinical_concep_extraction.jpg" alt="" title="Clinical Text" border="1"/>
