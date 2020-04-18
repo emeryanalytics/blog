@@ -1,3 +1,3 @@
 My blog on Analytics:
 
-https://liambll.github.io/blog/
+https://data-metrics.github.io/blog/
