@@ -5,12 +5,12 @@ permalink: /portfolio/
 ---
 
 {%
-list_or = []
-list_gv = []
-list_sp = []
-list_cb = []
-list_nlp = []
-list_sa = []
+assign list_or = []
+assign list_gv = []
+assign list_sp = []
+assign list_cb = []
+assign list_nlp = []
+assign list_sa = []
 
 for project in site.portfolio
     if 'object-recognition' in project.tag:
@@ -33,8 +33,8 @@ for project in site.portfolio
     endif
 endfor
         
-list_projects = [list_or, list_gv, list_sp, list_cb, list_nlp] 
-list_categories = ['Object Detection & Semantic Segmentation', 'Stereo Vision & 3D Reconstruction', 'Signal Processing', 'Computational Biochemistry', 'Statistical-Analysis', 'Natural Language Processing']
+assign list_projects = [list_or, list_gv, list_sp, list_cb, list_nlp] 
+assign list_categories = ['Object Detection & Semantic Segmentation', 'Stereo Vision & 3D Reconstruction', 'Signal Processing', 'Computational Biochemistry', 'Statistical-Analysis', 'Natural Language Processing']
 
 for i in 0..(length(list_projects))
     category = list_categories[i]
