@@ -2,6 +2,7 @@
 layout: post
 title: Grape sugar estimation
 description: Python, OpenCV, Scikit-learn
+tag: object-recogniton
 img: /img/thumbnail_grape_sugar.jpg
 ---
 

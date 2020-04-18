@@ -2,6 +2,7 @@
 layout: post
 title: Dead/Alive Plant detection
 description: Python, Tensorflow, OpenCV
+tag: object-recogniton
 img: /img/thumbnail_plant_detection.jpg
 ---
 

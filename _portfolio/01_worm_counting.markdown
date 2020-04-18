@@ -2,6 +2,7 @@
 layout: post
 title: Worm counting
 description: Python, Tensorflow
+tag: object-recogniton
 img: /img/thumbnail_worm_counting.jpg
 ---
 

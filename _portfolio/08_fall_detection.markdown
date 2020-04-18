@@ -2,6 +2,7 @@
 layout: post
 title: Fall Detection
 description: Python, Scikit-learn
+tag: signal-processing
 img: /img/thumbnail_fall_detection.jpg
 ---
 
