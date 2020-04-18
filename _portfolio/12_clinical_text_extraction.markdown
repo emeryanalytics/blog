@@ -2,6 +2,7 @@
 layout: post
 title: Clinical Text Extraction
 description: Scala, Spark, cTAKES, Accumulo
+tag: natural-language-processing
 img: /img/thumbnail_clinical_text.jpg
 ---
 

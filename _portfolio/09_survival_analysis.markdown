@@ -2,6 +2,7 @@
 layout: post
 title: Survival Analysis
 description: R, ggplot2, glm, survival
+tag: statistical-analysis
 img: /img/thumbnail_survival.jpg
 ---
 

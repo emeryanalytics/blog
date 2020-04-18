@@ -2,6 +2,7 @@
 layout: post
 title: 3D Plant
 description: Python, OpenSFM, OpenCV
+tag: geometric-vision
 img: /img/thumbnail_3d.jpg
 ---
 

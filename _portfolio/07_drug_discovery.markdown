@@ -2,6 +2,7 @@
 layout: post
 title: Drug Virtual Screening
 description: Python, RDKit, PubChemPy, Scikit-learn
+tag: computational-biochemistry
 img: /img/thumbnail_chemistry.jpg
 ---
 

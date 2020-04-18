@@ -2,6 +2,7 @@
 layout: post
 title: Field Corn counting
 description: Python, ArcGIS, Tensorflow
+tag: object-recogniton
 img: /img/thumbnail_field_corn.jpg
 ---
 
