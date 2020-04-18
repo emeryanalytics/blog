@@ -5,7 +5,7 @@ permalink: /portfolio/
 ---
 
 {% assign list_projects = "" | split: ',' %}
-{% assign list_categories = "Object Detection & Semantic Segmentation, Stereo Vision & 3D Reconstruction, Signal Processing, Computational Biochemistry, Statistical Analysis, Natural Language Processing" | split: ',' %}
+{% assign list_categories = "Object Detection & Semantic Segmentation, Stereo Vision & 3D Reconstruction, Signal Processing, Computational Biochemistry, Experimental Design & Statistical Analysis, Natural Language Processing, Business Analytics" | split: ',' %}
 
 {% assign list_or = site.portfolio | 
       where_exp: "project", "project.tag contains 'object-recognition'" %}
@@ -31,8 +31,11 @@ permalink: /portfolio/
       where_exp: "project", "project.tag contains 'natural-language-processing'" %}
 {% assign list_projects = list_projects | push: list_nlp %}
 
-{% assign nb_categories = list_categories.size | minus: 1 %}
+{% assign list_nlp = site.portfolio | 
+      where_exp: "project", "project.tag contains 'business-analytics'" %}
+{% assign list_projects = list_projects | push: list_nlp %}
 
+{% assign nb_categories = list_categories.size | minus: 1 %}
 {% for i in (0..nb_categories) %}
 {% assign category = list_categories[i] %}
 {% assign projects = list_projects[i] %}
