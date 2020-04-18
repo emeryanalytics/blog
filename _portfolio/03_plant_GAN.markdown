@@ -2,7 +2,7 @@
 layout: post
 title: Plant GAN
 description: Python, Tensorflow, OpenCV
-tag: object-recogniton
+tag: object-recognition
 img: /img/thumbnail_GAN.jpg
 ---
 

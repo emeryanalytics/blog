@@ -2,7 +2,7 @@
 layout: post
 title: Cardiac MRI Segmentation
 description: Python, Keras, OpenCV
-tag: object-recogniton
+tag: object-recognition
 img: /img/thumbnail_cardiac_segmentation.jpg
 ---
 

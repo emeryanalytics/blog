@@ -2,7 +2,7 @@
 layout: post
 title: Skin Lesion Classification
 description: Python, OpenCV, Scitki-learn, Keras
-tag: object-recogniton
+tag: object-recognition
 img: /img/thumbnail_skin_lesion.jpg
 ---
 

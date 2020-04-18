@@ -190,6 +190,9 @@ font-size: 16px;
 */
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
+.clearboth {
+clear: both;
+}
 .clearfix:before,
 .clearfix:after {
 content: " ";

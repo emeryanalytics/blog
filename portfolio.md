@@ -4,45 +4,42 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-{%
-assign list_or = []
-assign list_gv = []
-assign list_sp = []
-assign list_cb = []
-assign list_nlp = []
-assign list_sa = []
+{% assign list_projects = "" | split: ',' %}
+{% assign list_categories = "Object Detection & Semantic Segmentation, Stereo Vision & 3D Reconstruction, Signal Processing, Computational Biochemistry, Statistical Analysis, Natural Language Processing" | split: ',' %}
 
-for project in site.portfolio
-    if 'object-recognition' in project.tag:
-        list_or << project
-    endif
-    if 'geometric-vision' in project.tag:
-        list_gv << project
-    endif
-    if 'signal-processing' in project.tag:
-        list_sp << project
-    endif
-    if 'computational-biochemistry' in project.tag:
-        list_cb << project
-    endif
-    if  'statistical-analysis' in project.tag:
-        list_sa << project
-    endif
-    if 'natural-language-processing' in project.tag:
-        list_nlp << project
-    endif
-endfor
-        
-assign list_projects = [list_or, list_gv, list_sp, list_cb, list_nlp] 
-assign list_categories = ['Object Detection & Semantic Segmentation', 'Stereo Vision & 3D Reconstruction', 'Signal Processing', 'Computational Biochemistry', 'Statistical-Analysis', 'Natural Language Processing']
+{% assign list_or = site.portfolio | 
+      where_exp: "project", "project.tag contains 'object-recognition'" %}
+{% assign list_projects = list_projects | push: list_or %}
 
-for i in 0..(length(list_projects))
-    category = list_categories[i]
-    projects = list_projects[i]
-    for project in projects
-%}
+{% assign list_gv = site.portfolio | 
+      where_exp: "project", "project.tag contains 'geometric-vision'" %}
+{% assign list_projects = list_projects | push: list_gv %}
 
-<h2>{{ category }}</h2>
+{% assign list_sp = site.portfolio | 
+      where_exp: "project", "project.tag contains 'signal-processing'" %}
+{% assign list_projects = list_projects | push: list_sp %}
+
+{% assign list_cb = site.portfolio | 
+      where_exp: "project", "project.tag contains 'computational-biochemistry'" %}
+{% assign list_projects = list_projects | push: list_cb %}
+
+{% assign list_sa = site.portfolio | 
+      where_exp: "project", "project.tag contains 'statistical-analysis'" %}
+{% assign list_projects = list_projects | push: list_sa %}
+
+{% assign list_nlp = site.portfolio | 
+      where_exp: "project", "project.tag contains 'natural-language-processing'" %}
+{% assign list_projects = list_projects | push: list_nlp %}
+
+{% assign nb_categories = list_categories.size | minus: 1 %}
+
+{% for i in (0..nb_categories) %}
+{% assign category = list_categories[i] %}
+{% assign projects = list_projects[i] %}
+
+<hr class="clearboth"/>
+<h4 class="clearboth">{{ category }}</h4>
+{% for project in projects %}
 {% if project.redirect %}
 <div class="project">
     <div class="thumbnail">
@@ -80,7 +77,7 @@ for i in 0..(length(list_projects))
 </div>
 
 {% endif %}
+{% endfor %}
 
-{% 
-    endfor
-endfor %}
+<br class="clearboth"/>
+{% endfor %}
