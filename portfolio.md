@@ -5,7 +5,7 @@ permalink: /portfolio/
 ---
 
 {% assign list_projects = "" | split: ',' %}
-{% assign list_categories = "Object Recognition & Semantic Segmentation, Stereo Vision & 3D Reconstruction, Signal Processing, Computational Biochemistry, Experimental Design & Statistical Analysis, Natural Language Processing, Business Analytics" | split: ',' %}
+{% assign list_categories = "Object Recognition & Semantic Segmentation, Stereo Vision & 3D Reconstruction, Signal Processing & Time Series Analysis, Computational Biochemistry & Bioinformatics, Experimental Design & Statistical Analysis, Natural Language Processing & Text Mining, Business Analytics & Operations Research" | split: ',' %}
 
 {% assign list_or = site.portfolio | 
       where_exp: "project", "project.tag contains 'object-recognition'" %}
