@@ -1,3 +1,3 @@
 My blog on Analytics:
 
-https://emeryanalytics.github.io/blog/portfolio/
+https://liambll.github.io/blog/portfolio/
