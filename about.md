@@ -17,7 +17,7 @@ I am fortunate to witness the power of data science in my work across R&D and bu
 <br/>
 <span class="contacticon center">
 	<!--- <a href="mailto:you@example.com"><i class="fa fa-envelope-square"></i></a> --->
-	<a href="https://github.com/data-metrics" target="_blank"><i class="fa fa-github-square" style="color:$theme-color"></i></a>
+	<a href="https://github.com/liambll" target="_blank"><i class="fa fa-github-square" style="color:$theme-color"></i></a>
 	<a href="https://www.linkedin.com/in/liambui/" target="_blank"><i class="fa fa-linkedin-square" style="color:$theme-color"></i></a>
 	<a href="https://twitter.com/LiamBLL" target="_blank"><i class="fa fa-twitter-square" style="color:$theme-color"></i></a>
 </span>
